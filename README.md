@@ -65,7 +65,7 @@ agent-endee/
 Ensure you have the Endee engine running locally:
 
 Bash
-# Inside your Endee repository
+#### Inside your Endee repository
 ./install.sh --release --avx2
 ./run.sh
 Endee runs at: http://localhost:8080
@@ -105,8 +105,11 @@ Embed: The text is converted into a 384-dimensional vector.
 Store: The vector is inserted into the Endee database with a unique ID.
 ### Query Handling
 When a user asks a question:
+
 Retrieve: The system performs a KNN similarity search in Endee to find the top $K$ most relevant past memories.
+
 Augment: These memories are injected into the LLM prompt as "Knowledge Context."
+
 Generate: Gemini processes the context and query to provide a grounded, intelligent response.
 
 ## 🛠️ Troubleshooting
@@ -115,3 +118,4 @@ Port Conflicts: Ensure 8080 (Endee), 5000 (Backend), and 5173 (Frontend) are fre
 Index Missing: If the backend fails to search, ensure you ran the Index Creation script in Step 2.
 
 API Key: Double-check that your GEMINI_API_KEY is active in the Google AI Studio.
+
