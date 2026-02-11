@@ -100,8 +100,8 @@ export GEMINI_API_KEY=your_actual_api_key
 python main.py
 ```
 ### 4️⃣ Frontend Setup
-Bash
 ```
+Bash
 cd frontend
 npm install
 npm run dev
@@ -129,6 +129,7 @@ Port Conflicts: Ensure 8080 (Endee), 5000 (Backend), and 5173 (Frontend) are fre
 Index Missing: If the backend fails to search, ensure you ran the Index Creation script in Step 2.
 
 API Key: Double-check that your GEMINI_API_KEY is active in the Google AI Studio.
+
 
 
 
