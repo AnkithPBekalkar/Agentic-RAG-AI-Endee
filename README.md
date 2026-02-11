@@ -119,3 +119,4 @@ Index Missing: If the backend fails to search, ensure you ran the Index Creation
 
 API Key: Double-check that your GEMINI_API_KEY is active in the Google AI Studio.
 
+
