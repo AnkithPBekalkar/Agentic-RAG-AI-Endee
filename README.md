@@ -139,8 +139,9 @@ When a user asks a question:
 
 * API Key: Double-check that your GEMINI_API_KEY is active in the Google AI Studio.
 
+## Project Image
 
-
+<img width="1562" height="845" alt="image" src="https://github.com/user-attachments/assets/52ed43cc-2053-4e59-b3eb-f5062e6ec7c0" />
 
 
 
