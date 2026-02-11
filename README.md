@@ -47,16 +47,16 @@ Vector DB,Endee OSS (C++ optimized engine)
 ```
 agent-endee/
 ├── backend/
-│   ├── agent.py         # Main agent reasoning & prompt engineering
-│   ├── memory.py        # Endee database connector & CRUD
-│   ├── retrieval.py     # Semantic search logic (Top-K)
-│   ├── embeddings.py    # Text-to-Vector transformation
-│   └── main.py          # API Entry point
+│   ├── agent.py        
+│   ├── memory.py        
+│   ├── retrieval.py    
+│   ├── embeddings.py    
+│   └── main.py          
 ├── frontend/
 │   ├── src/
-│   │   ├── components/  # Header.jsx, Chat.jsx, etc.
-│   │   ├── App.jsx      # Core application logic
-│   │   └── index.css    # Tailwind & Custom styles
+│   │   ├── components/  
+│   │   ├── App.jsx     
+│   │   └── index.css    
 │   └── package.json
 └── README.md
 ```
@@ -68,13 +68,17 @@ Ensure you have the Endee engine running locally:
 
 Bash
 #### Inside your Endee repository
+```
 ./install.sh --release --avx2
 ./run.sh
+```
+```
 Endee runs at: http://localhost:8080
+```
 
 ### 2️⃣ Create Vector Index
 Initialize the memory space for your agent:
-
+```
 Python
 import requests
 
@@ -86,17 +90,22 @@ requests.post(
         "space_type": "cosine"
     }
 )
+```
 ### 3️⃣ Backend Setup
+```
 Bash
 cd backend
 pip install -r requirements.txt
 export GEMINI_API_KEY=your_actual_api_key
 python main.py
+```
 ### 4️⃣ Frontend Setup
 Bash
+```
 cd frontend
 npm install
 npm run dev
+```
 
 ## 🧠 How it Works
 ### Memory Storage
@@ -120,6 +129,7 @@ Port Conflicts: Ensure 8080 (Endee), 5000 (Backend), and 5173 (Frontend) are fre
 Index Missing: If the backend fails to search, ensure you ran the Index Creation script in Step 2.
 
 API Key: Double-check that your GEMINI_API_KEY is active in the Google AI Studio.
+
 
 
 
