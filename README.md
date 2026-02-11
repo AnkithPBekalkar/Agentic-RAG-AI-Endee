@@ -3,7 +3,6 @@
 Powered by **Endee** and **Gemini**, this system bridges the gap between static LLMs and persistent, context-aware intelligence.
 
 [![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20FastAPI%20%7C%20Endee-blue)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 
 ## 📌 Overview
 
@@ -62,6 +61,14 @@ agent-endee/
 ```
 
 ## ⚙️ Setup Instructions
+### 📋 Prerequisites
+Python 3.10+
+
+Node.js 18+
+
+Endee Database installed locally
+
+Google Gemini API Key
 
 ### 1️⃣ Run Endee (Vector Database)
 Ensure you have the Endee engine running locally:
@@ -129,6 +136,7 @@ Port Conflicts: Ensure 8080 (Endee), 5000 (Backend), and 5173 (Frontend) are fre
 Index Missing: If the backend fails to search, ensure you ran the Index Creation script in Step 2.
 
 API Key: Double-check that your GEMINI_API_KEY is active in the Google AI Studio.
+
 
 
 
